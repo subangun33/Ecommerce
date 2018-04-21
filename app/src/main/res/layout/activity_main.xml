@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentTop="true"
+       android:id="@+id/linieratas"
+       >
+
+       <EditText
+           android:layout_width="match_parent"
+           android:hint="@string/email_telepon_username"
+           android:layout_height="wrap_content"
+           android:id="@+id/editEmail"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/password"
+           android:inputType="textPassword"
+           android:id="@+id/editPassword"
+           />
+
+       <Button
+           android:textColor="#fff"
+           android:background="@drawable/bg_orange"
+           android:text="@string/login"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnLogin"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linierBawah"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_marginRight="16dp"
+                android:background="#737272"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:text="@string/login_cepat_dengan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <View
+                android:layout_marginLeft="16dp"
+                android:background="#737272"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <Button
+            android:drawableLeft="@drawable/ic_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoginSMS"
+            android:text="@string/login_dengan_google"
+            android:background="@drawable/bg_green"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:drawableLeft="@drawable/ic_facebook"
+            android:background="@drawable/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoginFB"
+            android:text="@string/lanjutkan_dengan_facebook"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
